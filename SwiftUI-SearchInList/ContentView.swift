@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var searchTerm = ""
+    let names = ["Arpit", "Abhishek", "Akshay", "Satyam", "Narayan", "Amit"]
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            SearchBar(text: $searchTerm)
+            List(names.filter {
+                searchTerm.isEmpty ? true : $0.localizedCaseInsensitiveContains(searchTerm)
+            }, id: \.self) { name in
+                Text(name)
+                    .font(.title)
+            }
+        }
     }
 }
 

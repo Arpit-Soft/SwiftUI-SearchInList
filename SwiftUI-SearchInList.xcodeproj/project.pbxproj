@@ -16,6 +16,7 @@
 		2D5B657626B67222006773D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B657426B67222006773D6 /* LaunchScreen.storyboard */; };
 		2D5B658126B67222006773D6 /* SwiftUI_SearchInListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5B658026B67222006773D6 /* SwiftUI_SearchInListTests.swift */; };
 		2D5B658C26B67222006773D6 /* SwiftUI_SearchInListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5B658B26B67222006773D6 /* SwiftUI_SearchInListUITests.swift */; };
+		2D5B659E26B676AF006773D6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5B659D26B676AE006773D6 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2D5B658726B67222006773D6 /* SwiftUI-SearchInListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-SearchInListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5B658B26B67222006773D6 /* SwiftUI_SearchInListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_SearchInListUITests.swift; sourceTree = "<group>"; };
 		2D5B658D26B67222006773D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D5B659D26B676AE006773D6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		2D5B656526B6721F006773D6 /* SwiftUI-SearchInList */ = {
 			isa = PBXGroup;
 			children = (
+				2D5B659C26B6769E006773D6 /* CustomView */,
 				2D5B656626B6721F006773D6 /* AppDelegate.swift */,
 				2D5B656826B6721F006773D6 /* SceneDelegate.swift */,
 				2D5B656A26B6721F006773D6 /* ContentView.swift */,
@@ -137,6 +140,14 @@
 				2D5B658D26B67222006773D6 /* Info.plist */,
 			);
 			path = "SwiftUI-SearchInListUITests";
+			sourceTree = "<group>";
+		};
+		2D5B659C26B6769E006773D6 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				2D5B659D26B676AE006773D6 /* SearchBar.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 			files = (
 				2D5B656E26B6721F006773D6 /* SwiftUI_SearchInList.xcdatamodeld in Sources */,
 				2D5B656726B6721F006773D6 /* AppDelegate.swift in Sources */,
+				2D5B659E26B676AF006773D6 /* SearchBar.swift in Sources */,
 				2D5B656926B6721F006773D6 /* SceneDelegate.swift in Sources */,
 				2D5B656B26B6721F006773D6 /* ContentView.swift in Sources */,
 			);
